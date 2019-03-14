@@ -1,305 +1,333 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Engineering Day'19</title>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head> <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png"> <!-- Author Meta -->
+    <meta name="author" content="CSECU"> <!-- Meta Description -->
+    <meta name="description" content="Engineering Day 2019, Celebrated by the Faculty of Engineering, University of Chittagong."> <!-- Meta Keyword -->
+    <meta name="keywords" content="engineering,day,2019,university,chittagong,faculty,programming,contest,project,presentation"> <!-- meta character set -->
+    <meta charset="UTF-8"> <!-- Site Title --> <title>Engineering Day, 2019</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!-- CSS ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/hexagons.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="event-details-wrapper" style="display: none">
+    <button class="event-details-close-btn float-right" onclick="hideEventDetails()" title="Close">&times;</button>
+    <div style="max-height: 100%;max-width: 100%;overflow: auto">
+        <div id="event-details"></div>
+    </div>
+</div>
+<div id="reg-form" style="display: none">
+    <button class="close-button text-uppercase primary-btn header-btn" onclick="hideRegForm()" title="Close">&times;
+    </button>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_cOg2-O_CBDrCVs2-S6kM14tEamq86zAdQ1S2ehqq6sU31A/viewform?embedded=true"
+            width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...
+    </iframe>
+</div>
+<header id="header" class="home">
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo"><a class="navbar-brand h3 text-white" href="">Engineering Day &apos;19</a></div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#events">Events</a></li>
+                    <li><a onclick="showRegForm()" href="#">Registration</a></li>
+                    <li><a href="#schedules">Schedules</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container --> </div>
+    </div>
+</header><!-- #header --> <!-- start banner Area -->
+<section class="banner-area" id="home">
+    <div class="container">
+        <div class="row fullscreen d-flex align-items-center justify-content-center">
+            <div class="banner-content col-lg-6 col-md-6"><h1> Engineering Day <br> Conference 2019 <br></h1>
+                <div class="col-md-5" style="margin: 20px 0;">
+                    <div class="d-flex justify-content-between">
+                        <div class="text-white icons"><i class="fas fa-gamepad"></i></div>
+                        <div class="text-white icons"><i class="fas fa-mobile"></i></div>
+                        <div class="text-white icons"><i class="fas fa-fingerprint"></i></div>
+                        <div class="text-white icons"><i class="fas fa-bug"></i></div>
+                        <div class="text-white icons"><i class="fas fa-book-open"></i></div>
+                    </div>
+                </div>
+                <a href="#" onclick="showRegForm()" class="primary-btn header-btn text-uppercase">Register now</a>
+                &nbsp; &nbsp; <a href="https://www.facebook.com/events/368634500403805/"
+                                 class="primary-btn header-btn text-uppercase" target="_blank">Learn More</a></div>
+            <div class="banner-img col-lg-6 col-md-6"><img class="img-fluid" src="img/banner-img.png" alt=""></div>
+        </div>
+    </div>
+</section> <!-- End banner Area --> <!-- Start products Area -->
+<section class="products-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12 pb-40 header-text text-center"><h1 class="pb-10">Event starts in</h1></div>
+        </div>
+        <div class="text-center" id="time-counter"></div>
+        <script>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">	
-			<link rel="stylesheet" href="css/hexagons.min.css">							
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>	
-			  <header id="header" id="home">
-			    <div class="container main-menu">
-			    	<div class="row align-items-center justify-content-between d-flex">
-				      <div id="logo">
-				        <a class="navbar-brand h3 text-white" href="index.html">Engineering Day 19</a>
-				      </div>
-				      <nav id="nav-menu-container">
-				        <ul class="nav-menu">
-							<li class="menu-active"><a href="index.html">Events</a></li>
-							<li class="menu-has-children"> <a href="">Registration</a>
-								<ul>
-									<li><a href="oral.html">Oral Presentation</a></li>	
-									<li><a href="oral.html">Poster Presentation</a></li>
-									<li class="menu-has-children"><a href="">Project Competition</a>
-										<ul>
-											<li><a href="#">Item 1</a></li>
-											<li><a href="#">Item 2</a></li>
-										</ul>
-									</li>
-									<li><a href="">Career Talk</a></li>
-								</ul>
-							</li>
-							<li><a href="">Team Counter</a></li>
-							<li><a href="">Speakers</a></li>
-							<li><a href="about.html">About</a></li>						          
-							<li><a href="contact.html">Contact</a></li>				              
-				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
-			    	</div>
-			    </div>
-			  </header><!-- #header -->
+            const countDownDate = new Date("Apr 08, 2019 00:00:00").getTime();
 
-			<!-- start banner Area -->
-			<section class="banner-area" id="home">
-				<div class="container">
-					<div class="row fullscreen d-flex align-items-center justify-content-center">
-						<div class="banner-content col-lg-6 col-md-6">
-							<h1>
-								Engineering Day <br>
-								Conference 2019 <br>		
-							</h1>
-							<div class="col-md-5" style="margin: 20px 0;">
-								<div class="d-flex justify-content-between">
-									<div class="text-white icons">
-										<i class="fas fa-gamepad"></i>
-									</div>
-									<div class="text-white icons">
-										<i class="fas fa-mobile"></i>
-									</div>
-									<div class="text-white icons">
-										<i class="fas fa-fingerprint"></i>
-									</div>
-									<div class="text-white icons">
-										<i class="fas fa-bug"></i>
-									</div>
-									<div class="text-white icons">
-										<i class="fas fa-book-open"></i>
-									</div>
-								</div>
-							</div>
-							<a href="#" class="primary-btn header-btn text-uppercase">Register now</a>
-							&nbsp; &nbsp;
-							<a href="#" class="primary-btn header-btn text-uppercase">Learn More</a>
-						</div>
-						<div class="banner-img col-lg-6 col-md-6">
-							<img class="img-fluid" src="img/banner-img.png" alt="">
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->
-
-			<!-- Start products Area -->
-			<section class="products-area section-gap">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="col-md-12 pb-40 header-text text-center">
-							<h1 class="pb-10">Event starts in</h1>
-						</div>
-					</div>							
-					<div class="text-center" id="time-counter"></div>
-					<script>
-						// Set the date we're counting down to
-						var countDownDate = new Date("Apr 08, 2019 00:00:00").getTime();
-						
-						// Update the count down every 1 second
-						var x = setInterval(function() {
-						
-						  // Get todays date and time
-						  var now = new Date().getTime();
-						
-						  // Find the distance between now and the count down date
-						  var distance = countDownDate - now;
-						
-						  // Time calculations for days, hours, minutes and seconds
-						  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-						  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-						  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-						  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-						
-						  // Display the result in the element with id="demo"
-						  document.getElementById("time-counter").innerHTML = days + "d " + hours + "h "
-						  + minutes + "m " + seconds + "s ";
-						
-						  // If the count down is finished, write some text 
-						  if (distance < 0) {
-							clearInterval(x);
-							document.getElementById("time-counter").innerHTML = "EXPIRED";
-						  }
-						}, 1000);
-					</script>
-				</div>	
-			</section>
-			<!-- End products Area -->
-
-			<!-- Start feature Area -->
-			<section class="section-gap">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="col-md-12 pb-40 header-text text-center">
-							<h1 class="pb-10">Events</h1>
-						</div>
-					</div>							
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<div class="thumb">
-									<img src="img/public_speaking.jpg" width="100%" alt="">
-								</div>
-								<div class="details">
-									<h4>Oral Presentation</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-									<a href="product-details.html" class="primary-btn text-uppercase">View Details</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<div class="thumb">
-									<img src="img/public_speaking.jpg" width="100%" alt="">
-								</div>
-								<div class="details">
-									<h4>Poster Presentation</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-									<a href="product-details.html" class="primary-btn text-uppercase">View Details</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<div class="thumb">
-									<img src="img/public_speaking.jpg" width="100%" alt="">
-								</div>
-								<div class="details">
-									<h4>Project Competition</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-									<a href="product-details.html" class="primary-btn text-uppercase">View Details</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<div class="thumb">
-									<img src="img/public_speaking.jpg" width="100%" alt="">
-								</div>
-								<div class="details">
-									<h4>Career Talk</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-									<a href="product-details.html" class="primary-btn text-uppercase">View Details</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End feature Area -->
-			
-			<section class="contact-page-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
-						<div class="col-lg-4 d-flex flex-column address-wrap">
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-home"></span>
-								</div>
-								<div class="contact-details">
-									<h5>University of Chittagong</h5>
-									<p>Faculty of Engineering</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-phone-handset"></span>
-								</div>
-								<div class="contact-details">
-									<h5>00 (880) 9865 562</h5>
-									<p>Mon to Thu 9am to 6 pm</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-envelope"></span>
-								</div>
-								<div class="contact-details">
-									<h5>support@admin.com</h5>
-									<p>Send us your query anytime!</p>
-								</div>
-							</div>														
-						</div>
-						<div class="col-lg-8">
-							<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
-								<div class="row">	
-									<div class="col-lg-6 form-group">
-										<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-									
-										<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-
-										<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text">
-									</div>
-									<div class="col-lg-6 form-group">
-										<textarea class="common-textarea form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>						
-									</div>
-									<div class="col-lg-12 d-flex justify-content-between">
-										<div class="alert-msg" style="text-align: left;"></div>
-										<button class="genric-btn primary circle" style="float: right;">Send Message</button>		
-									</div>
-								</div>
-							</form>	
-						</div>
-					</div>
-				</div>	
-			</section>
-			
-			<!-- start footer Area -->		
-			<footer class="footer-area section-gap">
-				<div class="container">
-					<div class="row footer-bottom d-flex justify-content-between">
-						<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy; ED <script>document.write(new Date().getFullYear());</script>. All rights reserved</p>
-						<div class="col-lg-4 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- End footer Area -->
-
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDkBasAFrf0StPsb9UI1DPppKmitW5_Xc"></script>
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-			<script src="js/owl.carousel.min.js"></script>	
-			<script src="js/hexagons.min.js"></script>							
-			<script src="js/jquery.nice-select.min.js"></script>	
-			<script src="js/jquery.counterup.min.js"></script>
-			<script src="js/waypoints.min.js"></script>							
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
-
-
-
+            const x = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("time-counter").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("time-counter").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </div>
+</section> <!-- End products Area --> <!-- Start feature Area -->
+<section class="section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12 pb-40 header-text text-center"><h1 class="pb-10" id="events">Events</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="single-product">
+                    <div class="thumb"><img src="img/public_speaking.jpg" width="100%" alt=""></div>
+                    <div class="details">
+                        <!-- The following element must be the first child of its parent, and a sibling of the <a> (or button to be clicked on) tag -->
+                        <div style="display: none;"><h4 class="text-center">Three Minute Thesis</h4>
+                            <hr>
+                            Three Minute Thesis is a research communication competition that requires contestants to
+                            condense their research into a three-minute, one-slide presentation for a non-specialist
+                            audience. <br> <h5>Rules:</h5>
+                            <ul>
+                                <li> A single static PowerPoint slide is permitted. No slide transitions, animations or
+                                    'movement' of any description are allowed. The slide is to be presented from the
+                                    beginning of the oration.
+                                </li>
+                                <li> No additional electronic media (e.g. sound and video files) are permitted.</li>
+                                <li> No additional props (e.g. costumes, musical instruments, laboratory equipment) are
+                                    permitted.
+                                </li>
+                                <li> Presentations are limited to 3 minutes maximum and competitors exceeding 3 minutes
+                                    are disqualified.
+                                </li>
+                                <li> Presentations are to be spoken word (e.g. no poems, raps or songs).</li>
+                                <li> Presentations are to commence from the stage.</li>
+                                <li> Presentations are considered to have commenced when a presenter starts their
+                                    presentation through either movement or speech.
+                                </li>
+                            </ul>
+                            <h5>Content:</h5> Your presentation should:
+                            <ul>
+                                <li> provide an understanding of the background to your research question and it's
+                                    significance,
+                                </li>
+                                <li> clearly describe the key results, outcomes, and conclusions of the research,</li>
+                                <li> follow a clear and logical sequence.</li>
+                            </ul>
+                        </div>
+                        <h4>Three Minute Thesis</h4>
+                        <p>Three Minute Thesis is a research communication ...</p> <a onclick="showEventDetails(this)"
+                                                                                      class="primary-btn text-uppercase">View
+                        Details</a></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-product">
+                    <div class="thumb"><img src="img/public_speaking.jpg" width="100%" alt=""></div>
+                    <div class="details">
+                        <div style="display: none;"><h4 class="text-center">Project Showcasing</h4>
+                            <hr>
+                            Teams will be showcasing projects related to any field of engineering. The teams will be
+                            judged mainly on the basis of innovation, real-life application, feasibility and legitimacy
+                            of the project. <br> <h5>Rules:</h5>
+                            <ul>
+                                <li> Projects must be presented by registered groups Maximum 3 (three) members are
+                                    allowed in each group.
+                                </li>
+                                <li> Each group can showcase as many projects as they want, however, registration has to
+                                    be done against each project individually.
+                                </li>
+                                <li> Groups must register their projects within the registration deadline.</li>
+                                <li> All kinds of registrations should be done online.</li>
+                                <li> Each group should /liing their own electrical equipment (eg: batteries, chargers,
+                                    converters, multi-plug).
+                                </li>
+                                <li> In all cases, decisions taken by the organizing committee will be judged as the
+                                    final decision.
+                                </li>
+                            </ul>
+                        </div>
+                        <h4>Project Showcasing</h4>
+                        <p>Teams will be showcasing projects related to any field of ...</p> <a
+                            onclick="showEventDetails(this)" class="primary-btn text-uppercase">View Details</a></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-product">
+                    <div class="thumb"><img src="img/public_speaking.jpg" width="100%" alt=""></div>
+                    <div class="details">
+                        <div style="display: none;"><h4 class="text-center">Programming Contest</h4>
+                            <hr>
+                            A programming contest generally involves the host presenting a set of logical or
+                            mathematical problems to the contestants and contestants are required to write computer
+                            programs capable of solving each problem. Judging is based mostly upon a number of problems
+                            solved and time spent on writing successful solutions, but may also include other factors
+                            (quality of output produced, execution time, program size, etc.) <br> <h5>Rules:</h5>
+                            <ul>
+                                <li> Contestants are free to organize themselves into teams of any size. A contestant
+                                    may only be a member of a single team. Teams may not divide, merge, or collaborate
+                                    after the start of the contest.
+                                </li>
+                                <li> Teams are free to use any programming language(s) on any platform(s).</li>
+                                <li> Teams must register during the contest to obtain a team-specific private identifier
+                                    that will be used for submissions and profiles. Teams using more than one private
+                                    identifier during the contest may be disqualified.
+                                </li>
+                                <li> Teams will not be required to submit executables. Teams wishing to be considered
+                                    for prizes must submit source code at the end of the contest. The exact details of
+                                    contest submissions will be announced at the start of the contest. Teams may submit
+                                    multiple times during the contest; early submissions may be evaluated during the
+                                    contest for live standings, but only the last submissions for the lightning division
+                                    and the full contest will be considered for prizes.
+                                </li>
+                                <li> The Organizers retain the right to monitor, record, and investigate the
+                                    submissions, other contest-related activities, or lack thereof, of contestants and
+                                    teams. The records are used for the sole purpose of judgment and are discarded once
+                                    the contest-related events are over. Violations of these rules and regulations
+                                    attempt to compromise the integrity of the contest infrastructure attempt to
+                                    interfere with other contestants or attempts to contravene the spirit of the contest
+                                    will lead to disqualification of the involved contestants and/or teams.
+                                </li>
+                                <li> Contestants retain ownership of all intellectual property rights in and to any
+                                    submitted solutions, source code, custom tools, and related materials
+                                    (“Submissions”) that contestants had before submission. As a condition of
+                                    submission, contestants grant the Organizers a non-exclusive, perpetual,
+                                    irrevocable, worldwide, royalty-free license to use, reproduce, publish, distribute,
+                                    publicly perform and publicly display the Submissions for the purposes of allowing
+                                    the Organizers to test and evaluate the Submissions for purposes of the contest.
+                                </li>
+                                <li> All decisions of the Organizers are final.</li>
+                            </ul>
+                        </div>
+                        <h4>Programming Contest</h4>
+                        <p>A programming contest generally involves the host ...</p> <a onclick="showEventDetails(this)"
+                                                                                        class="primary-btn text-uppercase">View
+                        Details</a></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-product">
+                    <div class="thumb"><img src="img/public_speaking.jpg" width="100%" alt=""></div>
+                    <div class="details">
+                        <div style="display: none;"><h4 class="text-center">Research Exposition</h4>
+                            <hr>
+                            The Research Exposition showcases some of the world-class research undertaken by the
+                            graduates of the Faculty of Engineering at the University of Chittagong. This exposition
+                            recognizes the students' presence on campus and the significant contribution they make to
+                            the university and the global community.
+                        </div>
+                        <h4>Research Exposition</h4>
+                        <p>The Research Exposition showcases some of the world-class ...</p> <a
+                            onclick="showEventDetails(this)" class="primary-btn text-uppercase">View Details</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- End feature Area -->
+<section class="contact-page-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="map-wrap" style="width:100%; height: 445px;" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1843.439047246461!2d91.7826131!3d22.4712149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x69a4a0ad8e2270eb!2sFaculty+of+Engineering!5e0!3m2!1sen!2sbd!4v1552562292276"
+                        width="100%" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-4 d-flex flex-column address-wrap justify-content-center" id="contact">
+                <div class="single-contact-address d-flex flex-row">
+                    <div class="icon"><span class="lnr lnr-home"></span></div>
+                    <div class="contact-details"><h5>University of Chittagong</h5>
+                        <p>Faculty of Engineering</p></div>
+                </div>
+                <div class="single-contact-address d-flex flex-row">
+                    <div class="icon"><span class="lnr lnr-phone-handset"></span></div>
+                    <div class="contact-details"><h5>00 (880) 9865 562</h5>
+                        <p>Sun to Thu 9am to 6 pm</p></div>
+                </div>
+                <div class="single-contact-address d-flex flex-row">
+                    <div class="icon"><span class="lnr lnr-envelope"></span></div>
+                    <div class="contact-details"><h5>support@admin.com</h5>
+                        <p>Send us your query anytime!</p></div>
+                </div>
+            </div>
+            <div class="col-lg-8" id="schedules">
+                <div class="title text-center">Event Schedules</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="schedules">
+                            <li><em>9:00 AM - 9:30 AM</em><br>Participant Reporting Time</li>
+                            <li><em>9:30 AM - 10:00 AM</em><br>Rally and Opening Ceremony</li>
+                            <li><em>10:00 AM - 10:20 AM</em><br>Snacks for Participants</li>
+                            <li><em>10:30 AM - 1:00 PM</em><br>Research Exposition & Project Showcasing</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="schedules">
+                            <li><em>11:30 AM - 12:50 PM</em><br>Judging</li>
+                            <li><em>1:00 PM - 2:30 PM</em><br>Lunch Break (Participants)</li>
+                            <li><em>3:00 PM - 4:00 PM</em><br>Experience Exchange (Career Talk) and Q&A Session</li>
+                            <li><em>4:00 PM - 4:45 PM</em><br>Prize Giving Ceremony</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row footer-bottom d-flex justify-content-between">
+            <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy; ED
+                <script>document.write(new Date().getFullYear());</script>
+                . All rights reserved
+            </p>
+            <div class="col-lg-4 col-sm-12 footer-social"><a href="https://www.facebook.com/events/368634500403805/"
+                                                             target="_blank"><i class="fa fa-facebook"></i></a> <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe_cOg2-O_CBDrCVs2-S6kM14tEamq86zAdQ1S2ehqq6sU31A/viewform"
+                    target="_blank"><i class="fa fa-google"></i></a>
+                <!--<a href="#"><i class="fa fa-behance"></i></a>--> </div>
+        </div>
+    </div>
+</footer> <!-- End footer Area -->
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/easing.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/hexagons.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
