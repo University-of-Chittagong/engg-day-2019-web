@@ -4,7 +4,7 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 /* =================================== */
-/*  Basic Style 
+/*  Basic Style
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
@@ -2417,6 +2417,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-product .thumb {
+  background-color: #FFF;
   padding: 40px;
   border-bottom: 1px solid #eee;
 }
@@ -3575,6 +3576,109 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #222;
 }
 
+.gaming-banner {
+    background: #000;
+    background-image: url("../img/gaming.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("../img/gaming.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.gaming-banner-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.gaming-banner-content h3 {
+    color: #FFF;
+    font-weight: 400;
+    padding: 12px;
+}
+
+.gaming-banner-content h1 {
+    font-size: 72px;
+    color: #FFF;
+    font-weight: 900;
+    padding: 16px;
+}
+
+.gaming-banner-content p {
+    color: #FFF;
+    padding: 12px;
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 886px) {
+    .gaming-banner-content h3 {
+        font-weight: 200;
+        font-size: 22px;
+    }
+
+    .gaming-banner-content h1 {
+        font-size: 52px;
+        color: #FFF;
+        font-weight: 500;
+    }
+
+    .gaming-banner-content p {
+        color: #FFF;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 681px) {
+    .gaming-banner-content h3 {
+        font-weight: 200;
+        font-size: 18px;
+    }
+
+    .gaming-banner-content h1 {
+        font-size: 42px;
+        color: #FFF;
+        font-weight: 400;
+    }
+
+    .gaming-banner-content p {
+        color: #FFF;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .gaming-banner-content {
+        padding: 32px;
+    }
+
+    .gaming-banner-content h3 {
+        font-weight: 200;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .gaming-banner-content h1 {
+        font-size: 32px;
+        color: #FFF;
+        font-weight: 500;
+        padding: 12px;
+    }
+
+    .gaming-banner-content p {
+        color: #FFF;
+        padding: 8px;
+        font-size: 12px;
+    }
+}
 
 /* Customized by chitholian */
 #reg-form {
@@ -3588,7 +3692,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     z-index: 99999;
 }
 
-.close-button { 
+.close-button {
     position: absolute;
     top: 10px;
     font-size: 2em
