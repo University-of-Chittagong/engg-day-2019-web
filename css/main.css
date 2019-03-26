@@ -2559,11 +2559,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease 0s;
 }
 
-.feature-area .single-feature .title .lnr {
+.feature-area .single-feature .lnr {
   color: #222;
   font-weight: 600;
   font-size: 20px;
   margin-right: 10px;
+}
+
+.title {
+    color: #222;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .feature-area .single-feature p {
