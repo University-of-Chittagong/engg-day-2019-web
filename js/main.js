@@ -353,6 +353,8 @@ $('.owl-carousel').owlCarousel({
     autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
+    nav:true,
+    navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     responsive : {
         // breakpoint from 0 up
         0 : {
