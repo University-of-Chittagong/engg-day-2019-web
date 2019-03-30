@@ -28,21 +28,15 @@
         <div id="event-details"></div>
     </div>
 </div>
-<div id="reg-form" style="display: none">
-    <button class="close-button text-uppercase primary-btn header-btn" onclick="hideRegForm()" title="Close">&times;
-    </button>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_cOg2-O_CBDrCVs2-S6kM14tEamq86zAdQ1S2ehqq6sU31A/viewform?embedded=true"
-            width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...
-    </iframe>
-</div>
 <header id="header" class="home">
     <div class="container main-menu">
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo"><a class="navbar-brand h3 text-white" href=""><img src="img/logo-croped.png" height="42" alt="logo"></a></div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="#events">Events</a></li>
-                    <li><a onclick="showRegForm()" href="#">Registration</a></li>
+                    <li class="menu-active"><a href="#home">Home</a></li>
+                    <li><a href="#countdown">Countdown</a></li>
+                    <li><a href="#events">Events</a></li>
                     <li><a href="#schedules">Schedules</a></li>
                     <li><a href="#speakers">Speakers</a></li>
                     <li><a href="#about">About</a></li>
@@ -63,15 +57,14 @@
                         <div class="text-white icons"><i class="fas fa-book-open"></i></div>
                     </div>
                 </div>
-                <a href="#" onclick="showRegForm()" class="primary-btn header-btn text-uppercase">Register now</a>
-                &nbsp; &nbsp; <a href="https://www.facebook.com/events/368634500403805/"
+                <a href="https://www.facebook.com/events/368634500403805/"
                                  class="primary-btn header-btn text-uppercase" target="_blank">Learn More</a>
             </div>
             <div class="banner-img col-lg-6 col-md-6"><img class="img-fluid" src="img/banner-img.png" alt=""></div>
         </div>
     </div>
 </section> <!-- End banner Area --> <!-- Start products Area -->
-<section class="section-gap">
+<section class="section-gap" id="countdown">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-md-12 pb-40 header-text text-center"><h1 class="pb-10">Event starts in</h1></div>
@@ -110,31 +103,31 @@
                         <!-- The following element must be the first child of its parent, and a sibling of the <a> (or button to be clicked on) tag -->
                         <div style="display: none;"><h4 class="text-center">Three Minute Thesis</h4>
                             <hr>
-                            <p>
+                            <p class="event-paragraph">
                                 Three Minute Thesis is a research communication competition that requires contestants
-                                to condense their research into a three-minute, one-slide presentation for a non-specialist audience. <br>
+                                to condense their research into a three-minute, one-slide presentation for a non-specialist audience.
                                 There is no limit on how many candidates can register for this event. The review panel which is
                                 consisted of the faculty members will review the submissions. Candidates selected by the panel
                                 will be sent an approval mail. Then they will be required to confirm the payment before deadline,
                                 which will be notified to them with the approval mail.
                             </p>
-                            <h5>What is 3MT?</h5>
-                            <p>
+                            <h5 class="event-header">What is 3MT?</h5>
+                            <p class="event-paragraph">
                                 The University of Queensland (UQ), 3MT competition cultivates students’ academic,
                                 presentation, and research communication skills. Presenting in a 3MT competition increases
                                 their capacity to effectively explain their research in three minutes, in a language
                                 appropriate to a non-specialist audience.
                             </p>
-                            <h5>History</h5>
-                            <p>
+                            <h5 class="event-header">History</h5>
+                            <p class="event-paragraph">
                                 The idea for the Three Minute Thesis (3MT®) competition came about at a time when
                                 the state of Queensland was suffering severe drought. To conserve water, residents were
                                 encouraged to time their showers, and many people had a three-minute egg timer fixed to
                                 the wall in their bathroom. The then Dean of the UQ Graduate School,
                                 Emeritus Professor Alan Lawson, put two and two together and the idea for the 3MT competition was born.
                             </p>
-                            <h5>Rules:</h5> <br>
-                            <ul>
+                            <h5 class="event-header">Rules</h5>
+                            <ul class="event-paragraph">
                                 <li>Only a single static PowerPoint slide is permitted</li>
                                 <li>No slide transitions, animations or ‘movement’ of any description are allowed</li>
                                 <li>The slide is to be presented from the beginning of the oration</li>
@@ -146,9 +139,8 @@
                                 <li>Presentations are considered to have commenced when a presenter starts their presentation through either movement or speech</li>
                                 <li>Only 1 member is allowed in each team.</li>
                             </ul>
-                            <br>
-                            <h5>How will I be judged?</h5>
-                            <p>
+                            <h5 class="event-header">How will I be judged?</h5>
+                            <p class="event-paragraph">
                                 The presentations are judged by a diverse panel of judges from a range of disciplines.
                                 The exact composition varies each year, but we always make sure they are experienced academics.
                                 It is unlikely that they will be experts in your field, so they are also part of the ‘intelligent,
@@ -159,44 +151,36 @@
                                 <strong>Content</strong>, <strong>Engagement</strong> and <strong>Communication</strong>
                                 and should be the focus of your presentation.
                             </p>
-                            <ul>
-                                <li>
-                                    <h5>Content:</h5> Your presentation should:
-                                    <br>
-                                    <ul>
-                                        <li>Provide an understanding of the background to your research question and its significance</li>
-                                        <li>Clearly describe the key results, outcomes, and conclusions of the research</li>
-                                        <li>Follow a clear and logical sequence</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h5>Engagement:</h5> Your presentation should:
-                                    <br>
-                                    <ul>
-                                        <li>Capture and maintain the audience's attention</li>
-                                        <li>Make the audience want to know more</li>
-                                        <li>Convey enthusiasm for your research</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h5>Comprehension:</h5> Your presentation should:
-                                    <br>
-                                    <ul>
-                                        <li>Be communicated in language appropriate to a non-specialist audience</li>
-                                        <li>Avoid scientific jargon, explain terminology and provide adequate background information to illustrate points</li>
-                                        <li>Take care not to trivialize or generalize your research</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h5>Communication:</h5> When presenting, you should:
-                                    <br>
-                                    <ul>
-                                        <li>Have sufficient stage presence, eye contact, and vocal range; maintain a steady pace, and have a confident stance</li>
-                                        <li>Ensure your PowerPoint slide enhances the presentation and is clear, legible, and concise</li>
-                                        <li>Give adequate time to each element of your presentation</li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <div>
+                                <h5 class="event-sub-header">Content</h5>
+                                <p class="event-paragraph">Your presentation should:</p>
+                                <ul class="event-paragraph">
+                                    <li>Provide an understanding of the background to your research question and its significance</li>
+                                    <li>Clearly describe the key results, outcomes, and conclusions of the research</li>
+                                    <li>Follow a clear and logical sequence</li>
+                                </ul>
+                                <h5 class="event-sub-header">Engagement</h5>
+                                <p class="event-paragraph">Your presentation should:</p>
+                                <ul class="event-paragraph">
+                                    <li>Capture and maintain the audience's attention</li>
+                                    <li>Make the audience want to know more</li>
+                                    <li>Convey enthusiasm for your research</li>
+                                </ul>
+                                <h5 class="event-sub-header">Comprehension</h5>
+                                <p class="event-paragraph">Your presentation should:</p>
+                                <ul class="event-paragraph">
+                                    <li>Be communicated in language appropriate to a non-specialist audience</li>
+                                    <li>Avoid scientific jargon, explain terminology and provide adequate background information to illustrate points</li>
+                                    <li>Take care not to trivialize or generalize your research</li>
+                                </ul>
+                                <h5 class="event-sub-header">Communication</h5>
+                                <p class="event-paragraph">When presenting, you should:</p>
+                                <ul class="event-paragraph">
+                                    <li>Have sufficient stage presence, eye contact, and vocal range; maintain a steady pace, and have a confident stance</li>
+                                    <li>Ensure your PowerPoint slide enhances the presentation and is clear, legible, and concise</li>
+                                    <li>Give adequate time to each element of your presentation</li>
+                                </ul>
+                            </div>
                         </div>
                         <h4>Three Minute Thesis</h4>
                         <p>Three Minute Thesis is a research communication ...</p> <a onclick="showEventDetails(this)"
@@ -210,26 +194,24 @@
                     <div class="details">
                         <div style="display: none;"><h4 class="text-center">Project Showcasing</h4>
                             <hr>
-                            <h5>Announcement:</h5>
-                            <br>
-                            <ul>
+                            <h5 class="event-header">Announcement</h5>
+                            <ul class="event-paragraph">
                                 <li>Only students from the Faculty of Engineering, University of Chittagong are allowed to participate.</li>
                                 <li>Participant must bring their respective Student ID for verification purpose.</li>
                                 <li>Each team may have a maximum of 3 members.</li>
                                 <li>All registration must be completed online.</li>
                                 <li>Each group should bring their own electrical equipment (eg: batteries, chargers, converters, multi-plug)</li>
-                            </ul> <br>
-                            <h5>Rules & Regulations:</h5> <br>
-                            <ul>
+                            </ul>
+                            <h5 class="event-header">Rules And Regulations</h5>
+                            <ul class="event-paragraph">
                                 <li>The registered team can showcase project.</li>
                                 <li>Participants are allowed to design and build any hardware or software based product or prototype.</li>
                                 <li>Each group can showcase as many projects as they want, however, registration has to be done against each project individually.</li>
                                 <li>Teams must register their projects within the registration deadline.</li>
                                 <li>In all cases, decisions taken by the organizing committee will be judged as the final decision.</li>
                             </ul>
-                            <br>
-                            <h5>About Project Showcase:</h5>
-                            <p>Teams will be showcasing projects related to any field of engineering. Projects will be judged mainly on the basis of innovation, real-life application, feasibility, and legitimacy.</p>
+                            <h5 class="event-header">About Project Showcase</h5>
+                            <p class="event-paragraph">Teams will be showcasing projects related to any field of engineering. Projects will be judged mainly on the basis of innovation, real-life application, feasibility, and legitimacy.</p>
                         </div>
                         <h4>Project Showcasing</h4>
                         <p>Teams will be showcasing projects related to any field of ...</p> <a
@@ -242,14 +224,14 @@
                     <div class="details">
                         <div style="display: none;"><h4 class="text-center">Programming Contest Rulebook</h4>
                             <hr>
-                            <p>
+                            <p class="event-paragraph">
                                 A programming contest generally involves the host presenting a set of logical or mathematical problems
                                 to the contestants and contestants are required to write computer programs capable of solving each problem.
                                 Judging is based mostly upon a number of problems solved and time spent on writing successful solutions,
                                 but may also include other factors (quality of output produced, execution time, program size, etc.)
                             </p>
-                            <h5 class="mt-3 mb-3">Rules:</h5>
-                            <ul>
+                            <h5 class="event-header">Rules</h5>
+                            <ul class="event-paragraph">
                                 <li>Contestants are free to organize themselves of a team of maximum 3 members. A contestant may only be a member of a single team. Teams may not divide, merge, or collaborate after the start of the contest.</li>
                                 <li>All types of electrical devices are banned from contest premises. But any type of paper material such as notebook, book, printed sheets is allowed.</li>
                                 <li>
@@ -283,17 +265,19 @@
                     <div class="details">
                         <div style="display: none;"><h4 class="text-center">Research Exposition Rulebook</h4>
                             <hr>
-                            The Research Exposition showcases research undertaken by the graduates of the
-                            Faculty of Engineering at the University of Chittagong. This exposition recognizes the students'
-                            presence on campus and the significant contribution they make to the university and the global community.
-                            <h5 class="mt-3 mb-3">Prerequisites:</h5>
-                            <ul>
+                            <p class="event-paragraph">
+                                The Research Exposition showcases research undertaken by the graduates of the
+                                Faculty of Engineering at the University of Chittagong. This exposition recognizes the students'
+                                presence on campus and the significant contribution they make to the university and the global community.
+                            </p>
+                            <h5 class="event-header">Prerequisites</h5>
+                            <ul class="event-paragraph">
                                 <li>Works that are of scientific, scholarly or creative significance.</li>
                                 <li>In the case of projects the participants have to clearly state a
                                     project goal or hypothesis, the creative endeavor and methods used to accomplish it and conclusions reached.</li>
                             </ul>
-                            <h5 class="mt-3 mb-3">Preliminary Steps:</h5>
-                            <ul>
+                            <h5 class="event-header">Preliminary Steps</h5>
+                            <ul class="event-paragraph">
                                 <li>The participants have to submit the abstract of their work which should be between 300-400 words.</li>
                                 <li>The abstract is required to include details of either research, development and/or innovation,
                                     with sufficient information to enable the review panel to make a decision on appropriateness for oral presentation in theme.</li>
@@ -304,8 +288,8 @@
                                     Candidates selected by the panel will be sent an approval mail. Then they will be
                                     required to confirm the payment before deadline, which will be notified to them with the approval mail.</li>
                             </ul>
-                            <h5 class="mt-3 mb-3">Rules of Presentation:</h5>
-                            <ul>
+                            <h5 class="event-header">Rules of Presentation</h5>
+                            <ul class="event-paragraph">
                                 <li>Only A1 size paper is allowed for making the poster.</li>
                                 <li>Maximum 2 presenters can present a single work.</li>
                                 <li>All the people who contributed must be included according to the degree of involvement.</li>
@@ -323,7 +307,7 @@
                     <div class="details">
                         <div style="display: none;"><h4 class="text-center">Experience Exchange</h4>
                             <hr>
-                            We will be able to meet with our alumni and we will be able to learn their experience in the long run.
+                            <p class="event-paragraph">We will be able to meet with our alumni and we will be able to learn their experience in the long run.</p>
                             <div class="container mt-5">
                                 <div class="row">
                                     <div class="col-md-3">
@@ -395,157 +379,138 @@
             <!-- The following element must be the first child of its parent, and a sibling of the <a> (or button to be clicked on) tag -->
             <div style="display: none;"><h4 class="text-center">Gaming Fest</h4>
                 <hr>
-                <p>In gaming fest, different games created by the students of Department of Computer Science and Engineering,
+                <p class="event-paragraph">In gaming fest, different games created by the students of Department of Computer Science and Engineering,
                     University of Chittagong will be showcased and you will be able to learn about these games.</p>
-                <h5 class="mt-5">Top games showcased in the Engineering Fest:</h5>
-                <ol>
-                    <li>
-                        <div class="card w-75" style="margin: 20px;">
-                          <div class="card-body">
-                              <div class="row">
-                                  <div class="col-md-2">
-                                      <img src="img/Games/bubble.webp" width="100%" alt="">
-                                  </div>
-                                  <div class="col-md-10">
-                                      <h5 class="card-title">Magic Bubble</h5>
-                                      <p class="card-text">
-                                          The princess has been abducted by a monster.
-                                          She is kept in a ruined castle long away beyond fierce rivers, wild forests, deadly oceans,
-                                          and volcanos. Suppose, you have magic wands. The wands are the teleporters through which
-                                          you can collect the essentials to save the princes. But, the enemies are smarter to come
-                                          through your wand-teleporter.
-                                      </p>
-                                      <a href="https://play.google.com/store/apps/details?id=com.middayDreamz.MyBubble" target="_blank" class="main-btn">Get it on Google Play</a>
-                                  </div>
-                              </div>
+                <h5 class="event-header">Top games showcased in the Engineering Fest:</h5>
+                <div class="card w-75" style="margin: 20px;">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-md-2">
+                              <img src="img/Games/bubble.webp" width="100%" alt="">
                           </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card w-75" style="margin: 20px;">
-                          <div class="card-body">
-                              <div class="row">
-                                  <div class="col-md-2">
-                                      <img src="img/Games/commando.webp" width="100%" alt="">
-                                  </div>
-                                  <div class="col-md-10">
-                                      <h5 class="card-title">The Commando</h5>
-                                      <p class="card-text">
-                                        This game is a strategic, role-playing game situated in indoor environments.
-                                        There are 23 levels in the game and all levels are available for free.
-                                        There are different types of missions in the game. player have to think and make plan to complete every mission.
-                                        In mission, sometimes gamer have to defeat all enemies.
-                                        Sometime player have to hide from enemies.
-                                        Sometime player have to save hostages.
-                                      </p>
-                                      <a href="https://play.google.com/store/apps/details?id=com.AGAMiLabs.TheCommando" target="_blank" class="main-btn">Get it on Google Play</a>
-                                  </div>
-                              </div>
+                          <div class="col-md-10">
+                              <h5 class="card-title">Magic Bubble</h5>
+                              <p class="card-text text-justify">
+                                  The princess has been abducted by a monster.
+                                  She is kept in a ruined castle long away beyond fierce rivers, wild forests, deadly oceans,
+                                  and volcanos. Suppose, you have magic wands. The wands are the teleporters through which
+                                  you can collect the essentials to save the princes. But, the enemies are smarter to come
+                                  through your wand-teleporter.
+                              </p>
+                              <a href='https://play.google.com/store/apps/details?id=com.middayDreamz.MyBubble&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="52"/></a>
                           </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card w-75" style="margin: 20px;">
-                          <div class="card-body">
-                              <div class="row">
-                                  <div class="col-md-2">
-                                      <img src="img/Games/ringball.webp" width="100%" alt="">
-                                  </div>
-                                  <div class="col-md-10">
-                                      <h5 class="card-title">Ring Ball</h5>
-                                      <p class="card-text">
-                                          One have to move a circle to keep a ping-pong ball inside the circle where some parts of the circle are missing.
-                                          Every part of the circle holds colors. For hitting different colorful parts of the circle one will be
-                                          rewarded with different scores. Difficulties will be increased by ping-pong ball speed, circle rotation speed,
-                                          increasing missing parts of circle and many more.
-                                          There will be different balls to unlock in game which can be unlocked by coins that player collect in game.
-                                      </p>
-                                      <a href="https://play.google.com/store/apps/details?id=com.agamilabs.magicCircle" target="_blank" class="main-btn">Get it on Google Play</a>
-                                  </div>
-                              </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card w-75" style="margin: 20px;">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-md-2">
+                              <img src="img/Games/commando.webp" width="100%" alt="">
                           </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card w-75" style="margin: 20px;">
-                          <div class="card-body">
-                              <div class="row">
-                                  <div class="col-md-2">
-                                      <img src="img/Games/colorblind.webp" width="100%" alt="">
-                                  </div>
-                                  <div class="col-md-10">
-                                      <h5 class="card-title">ColorBlind</h5>
-                                      <p class="card-text">
-                                          This game is a Puzzle genre game. There will be a grid of different colors.
-                                          The Center of the grid contains a text which indicates a color. The player have to choose that color from other grids.
-                                          Difficulty and Scoring are based on time, grid number and rotation.Player have to choose the color from the
-                                          grid before the given time to avoid game over. Player will be rewarded by different score based on
-                                          how fast he/she can choose the color. Grid number of every levels are different like 4,6,8 etc.
-                                          Rotation of grids in circle type levels also add some difficulty for players playing this game.
-                                          Players may find this game as a very exciting game as player have to choose from different colors
-                                          from the grid where he/she faces the dilemma to choose the color according to color or text.
-                                      </p>
-                                      <a href="https://play.google.com/store/apps/details?id=com.agamilabs.colorblind" target="_blank" class="main-btn">Get it on Google Play</a>
-                                  </div>
-                              </div>
+                          <div class="col-md-10">
+                              <h5 class="card-title">The Commando</h5>
+                              <p class="card-text text-justify">
+                                This game is a strategic, role-playing game situated in indoor environments.
+                                There are 23 levels in the game and all levels are available for free.
+                                There are different types of missions in the game. player have to think and make plan to complete every mission.
+                                In mission, sometimes gamer have to defeat all enemies.
+                                Sometime player have to hide from enemies.
+                                Sometime player have to save hostages.
+                              </p>
+                              <a href='https://play.google.com/store/apps/details?id=com.AGAMiLabs.TheCommando&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="52"/></a>
                           </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card w-75" style="margin: 20px;">
-                          <div class="card-body">
-                              <div class="row">
-                                  <div class="col-md-2">
-                                      <img src="img/Games/balance.webp" width="100%" alt="">
-                                  </div>
-                                  <div class="col-md-10">
-                                      <h5 class="card-title">Balance iT</h5>
-                                      <p class="card-text">
-                                          Balance iT is a casual type game where player is some round character.
-                                          This round character will be placed in a platform. The platform along with the round
-                                          character will be moving up and player have to control the platform to avoid obstacles
-                                          so that the round character is not killed by any obstacle. There will be coins and gems all
-                                          along the path. Player have to collect those coins and gems.
-                                          There is a inventory where there are some unlock-able round characters and platforms.
-                                          Player can unlock those characters and platforms by using coins and gems.
-                                      </p>
-                                      <a href="https://play.google.com/store/apps/details?id=com.agamilabs.BalanceiT" target="_blank" class="main-btn">Get it on Google Play</a>
-                                  </div>
-                              </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card w-75" style="margin: 20px;">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-md-2">
+                              <img src="img/Games/ringball.webp" width="100%" alt="">
                           </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card w-75" style="margin: 20px;">
-                          <div class="card-body">
-                              <div class="row">
-                                  <div class="col-md-2">
-                                      <img src="img/Games/runner.webp" width="100%" alt="">
-                                  </div>
-                                  <div class="col-md-10">
-                                      <h5 class="card-title">Mail Runner</h5>
-                                      <p class="card-text">
-                                          The game Mail Runner ( Dak Horkora ) is on the classic history of the early 19th century "Mail Runner",
-                                          who was in many ways a familiar figure to Europe, Africa, Asia and so on. Many countries like Germany,
-                                          United Kingdom, France, Japan, China, Mongolia, Namibia, Egypt, India, Nepal, and Bangladesh had the same
-                                          history of mail runner. The mail runner was the courier who carried public and private mail running long distance
-                                          on foot and setting out mailbag minding fear of many life threatening obstacles. Runners played on the fear of thick
-                                          jungle, thuggees and robbers, rain and torrent, ravines and tigers, and predatory beasts. Sometimes he was killed a mile
-                                          away from his last halt. Still runner fulfills his duties in heroic and tragic moments with joy and pain.
-                                          This game will let you feel the thrill and struggles during runner's movement through obstacles.
-                                      </p>
-                                      <a href="https://play.google.com/store/apps/details?id=com.MiddayDreamz.MailRunner" target="_blank" class="main-btn">Get it on Google Play</a>
-                                  </div>
-                              </div>
+                          <div class="col-md-10">
+                              <h5 class="card-title">Ring Ball</h5>
+                              <p class="card-text text-justify">
+                                  One have to move a circle to keep a ping-pong ball inside the circle where some parts of the circle are missing.
+                                  Every part of the circle holds colors. For hitting different colorful parts of the circle one will be
+                                  rewarded with different scores. Difficulties will be increased by ping-pong ball speed, circle rotation speed,
+                                  increasing missing parts of circle and many more.
+                                  There will be different balls to unlock in game which can be unlocked by coins that player collect in game.
+                              </p>
+                              <a href='https://play.google.com/store/apps/details?id=com.agamilabs.magicCircle&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="52"/></a>
                           </div>
-                        </div>
-                    </li>
-                </ol>
+                      </div>
+                  </div>
+                </div>
+                <div class="card w-75" style="margin: 20px;">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-md-2">
+                              <img src="img/Games/colorblind.webp" width="100%" alt="">
+                          </div>
+                          <div class="col-md-10">
+                              <h5 class="card-title">ColorBlind</h5>
+                              <p class="card-text text-justify">
+                                  This game is a Puzzle genre game. There will be a grid of different colors.
+                                  The Center of the grid contains a text which indicates a color. The player have to choose that color from other grids.
+                                  Difficulty and Scoring are based on time, grid number and rotation.Player have to choose the color from the
+                                  grid before the given time to avoid game over. Player will be rewarded by different score based on
+                                  how fast he/she can choose the color. Grid number of every levels are different like 4,6,8 etc.
+                                  Rotation of grids in circle type levels also add some difficulty for players playing this game.
+                                  Players may find this game as a very exciting game as player have to choose from different colors
+                                  from the grid where he/she faces the dilemma to choose the color according to color or text.
+                              </p>
+                              <a href='https://play.google.com/store/apps/details?id=com.agamilabs.colorblind&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="52"/></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card w-75" style="margin: 20px;">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-md-2">
+                              <img src="img/Games/balance.webp" width="100%" alt="">
+                          </div>
+                          <div class="col-md-10">
+                              <h5 class="card-title">Balance iT</h5>
+                              <p class="card-text text-justify">
+                                  Balance iT is a casual type game where player is some round character.
+                                  This round character will be placed in a platform. The platform along with the round
+                                  character will be moving up and player have to control the platform to avoid obstacles
+                                  so that the round character is not killed by any obstacle. There will be coins and gems all
+                                  along the path. Player have to collect those coins and gems.
+                                  There is a inventory where there are some unlock-able round characters and platforms.
+                                  Player can unlock those characters and platforms by using coins and gems.
+                              </p>
+                              <a href='https://play.google.com/store/apps/details?id=com.agamilabs.BalanceiT&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="52"/></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card w-75" style="margin: 20px;">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-md-2">
+                              <img src="img/Games/runner.webp" width="100%" alt="">
+                          </div>
+                          <div class="col-md-10">
+                              <h5 class="card-title">Mail Runner</h5>
+                              <p class="card-text text-justify">
+                                  The game Mail Runner ( Dak Horkora ) is on the classic history of the early 19th century "Mail Runner",
+                                  who was in many ways a familiar figure to Europe, Africa, Asia and so on. Many countries like Germany,
+                                  United Kingdom, France, Japan, China, Mongolia, Namibia, Egypt, India, Nepal, and Bangladesh had the same
+                                  history of mail runner. The mail runner was the courier who carried public and private mail running long distance
+                                  on foot and setting out mailbag minding fear of many life threatening obstacles. Runners played on the fear of thick
+                                  jungle, thuggees and robbers, rain and torrent, ravines and tigers, and predatory beasts. Sometimes he was killed a mile
+                                  away from his last halt. Still runner fulfills his duties in heroic and tragic moments with joy and pain.
+                                  This game will let you feel the thrill and struggles during runner's movement through obstacles.
+                              </p>
+                              <a href='https://play.google.com/store/apps/details?id=com.MiddayDreamz.MailRunner&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="52"/></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
             </div>
             <h3>And there's another surprise</h3>
             <h1>Gaming Fest</h1>
